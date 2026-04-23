@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Send, Loader2 } from "lucide-react";
+import { Mail, Send, Loader2 } from "lucide-react";
+import { FaGithub as Github, FaLinkedin as Linkedin } from "react-icons/fa";
 import { useState } from "react";
 
 export default function ContactSection() {

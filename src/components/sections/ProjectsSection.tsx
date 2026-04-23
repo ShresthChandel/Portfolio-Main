@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { projects, Project } from "@/data/projects";
+import { projects } from "@/data/projects";
 import GlowBorder from "../ui/GlowBorder";
-import { Github, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { FaGithub as Github } from "react-icons/fa";
 
 const categories = ["All", "AI/ML", "Full Stack", "Voice AI", "AR/VR"];
 

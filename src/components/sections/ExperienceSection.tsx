@@ -48,7 +48,17 @@ export default function ExperienceSection() {
   );
 }
 
-function ExperienceCard({ experience: exp, index }: { experience: any; index: number }) {
+type Experience = {
+  id: string | number;
+  role: string;
+  company: string;
+  duration: string;
+  location: string;
+  description: string[];
+  skills: string[];
+};
+
+function ExperienceCard({ experience: exp, index }: { experience: Experience; index: number }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const isEven = index % 2 === 0;
 
