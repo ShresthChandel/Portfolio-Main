@@ -4,19 +4,26 @@ import { motion } from "framer-motion";
 import { Mail, Send, Loader2 } from "lucide-react";
 import { FaGithub as Github, FaLinkedin as Linkedin } from "react-icons/fa";
 import { useState } from "react";
+import { sendEmailAction } from "@/app/actions/send-email";
 
 export default function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    
+    const formData = new FormData(e.currentTarget);
+    const result = await sendEmailAction(formData);
+    
+    setIsSubmitting(false);
+    
+    if (result.success) {
       setIsSuccess(true);
-    }, 1500);
+    } else {
+      alert("Failed to send message: " + result.error);
+    }
   };
 
   return (
@@ -106,6 +113,7 @@ export default function ContactSection() {
                   <input
                     type="text"
                     id="name"
+                    name="name"
                     required
                     className="w-full bg-background border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors font-sans"
                   />
@@ -115,6 +123,7 @@ export default function ContactSection() {
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     required
                     className="w-full bg-background border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors font-sans"
                   />
@@ -123,6 +132,7 @@ export default function ContactSection() {
                   <label htmlFor="message" className="block text-sm font-mono text-muted uppercase mb-2">Message</label>
                   <textarea
                     id="message"
+                    name="message"
                     required
                     rows={5}
                     className="w-full bg-background border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors font-sans resize-none"
