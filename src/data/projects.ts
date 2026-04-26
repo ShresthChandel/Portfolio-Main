@@ -28,7 +28,7 @@ export const projects: Project[] = [
     impact: "Reduced latency by 40% using edge models.",
     category: "Voice AI",
     techStack: ["FastMCP", "LiveKit", "Gemini 2.5 Flash", "Sarvam STT"],
-    githubUrl: "https://github.com/ShresthChandel",
+    githubUrl: "https://github.com/ShresthChandel/Ironman-Friday",
   },
   {
     id: "internmitra",
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     impact: "Scaled to 10k+ active student profiles.",
     category: "Full Stack",
     techStack: ["Next.js", "Tailwind CSS", "PostgreSQL", "Prisma"],
-    githubUrl: "https://github.com/ShresthChandel",
+    githubUrl: "https://github.com/ShresthChandel/InternMitra",
   },
   {
     id: "the-editor",
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     impact: "Enabled pair programming with sub-50ms latency.",
     category: "Full Stack",
     techStack: ["React", "Node.js", "Socket.io", "Monaco Editor"],
-    githubUrl: "https://github.com/ShresthChandel",
+    githubUrl: "https://github.com/ShresthChandel/web-ide.git",
   },
   {
     id: "empathy-engine",
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     impact: "Achieved high-fidelity emotional resonance in synthesized speech.",
     category: "AI/ML",
     techStack: ["FastAPI", "Hugging Face", "edge-tts", "Python"],
-    githubUrl: "https://github.com/ShresthChandel",
+    githubUrl: "https://github.com/ShresthChandel/Empathy-Engine.git",
   },
   {
     id: "nearby-recommender",
@@ -64,7 +64,25 @@ export const projects: Project[] = [
     impact: "Boosted local business discovery engagement by 30%.",
     category: "Full Stack",
     techStack: ["React", "Google Maps API", "Tailwind"],
-    githubUrl: "https://github.com/ShresthChandel",
+    githubUrl: "https://github.com/ShresthChandel/Nearby-Place-Recommender.git",
+  },
+  {
+    id: "habit-tracker",
+    title: "Habit Tracker",
+    description: "A Grind OS habit tracker application with daily habit tracking, streak management, and GitHub-style activity heatmaps.",
+    impact: "Features email nudges via Vercel Cron and milestone celebrations.",
+    category: "Full Stack",
+    techStack: ["Next.js 14", "Supabase", "Tailwind CSS", "shadcn/ui", "Resend"],
+    githubUrl: "https://github.com/ShresthChandel/Habit-Tracker.git",
+  },
+  {
+    id: "hand-connect",
+    title: "Hand Connect",
+    description: "An innovative project developed to bridge communication gaps.",
+    impact: "Empowered users with enhanced connectivity.",
+    category: "AI/ML",
+    techStack: ["Python", "Computer Vision"],
+    githubUrl: "https://github.com/ShresthChandel/Hand-Connect.git",
   },
   {
     id: "vrflow",
