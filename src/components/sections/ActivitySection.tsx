@@ -94,12 +94,7 @@ export default function ActivitySection() {
                 alt="GitHub Stats" 
                 className="w-full rounded object-cover"
               />
-              {/* eslint-disable-next-line @next/next/no-img-element
-              <img 
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=ShresthChandel&theme=react&hide_border=true&include_all_commits=false&count_private=false&layout=compact" 
-                alt="Top Languages" 
-                className="w-full rounded xl:col-span-2 object-cover"
-              /> */}
+
             </div>
           </motion.div>
 
