@@ -19,7 +19,7 @@ export async function sendEmailAction(formData: FormData) {
   }
 
   try {
-    const { data, error } = await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: "Portfolio Contact <portfolio@grindtracker.com>",
       to: "shresthsingh003@gmail.com",
       replyTo: email,
@@ -33,8 +33,9 @@ export async function sendEmailAction(formData: FormData) {
     }
 
     return { success: true };
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Failed to send email:", error);
-    return { error: error.message || "Something went wrong." };
+    const errorMessage = error instanceof Error ? error.message : "Something went wrong.";
+    return { error: errorMessage };
   }
 }
