@@ -14,8 +14,8 @@ export const projects: Project[] = [
   {
     id: "rag-chatbot",
     title: "Enterprise RAG Chatbot",
-    description: "A production-grade Retrieval-Augmented Generation chatbot built for enterprise knowledge bases.",
-    impact: "Deployed in production, serving enterprise clients with 95% accuracy.",
+    description: "A production-grade Retrieval-Augmented Generation chatbot built during internship for enterprise knowledge bases.",
+    impact: "Deployed in production, serving enterprise clients.",
     category: "AI/ML",
     techStack: ["LangChain", "FAISS", "FastAPI", "React"],
     githubUrl: "https://github.com/ShresthChandel",
@@ -31,10 +31,19 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/ShresthChandel/Ironman-Friday",
   },
   {
+    id: "design-code",
+    title: "Design Code",
+    description: "An AI-powered platform for mastering UML-based Low-Level Design — like LeetCode, but for system design.",
+    impact: "Provides AI-generated scores and actionable feedback on SOLID principles and design patterns.",
+    category: "Full Stack",
+    techStack: ["Next.js", "React Flow", "Prisma", "FastAPI", "CrewAI"],
+    githubUrl: "https://github.com/xcurx/design-code.git",
+  },
+  {
     id: "internmitra",
     title: "InternMitra",
     description: "A full-stack portal connecting students with high-quality internship opportunities.",
-    impact: "Scaled to 10k+ active student profiles.",
+    impact: "Scaled to get connected to PM internship scheme. M active student profiles.",
     category: "Full Stack",
     techStack: ["Next.js", "Tailwind CSS", "PostgreSQL", "Prisma"],
     githubUrl: "https://github.com/ShresthChandel/InternMitra",
@@ -93,4 +102,5 @@ export const projects: Project[] = [
     techStack: ["Unity", "C#", "Oculus SDK"],
     githubUrl: "https://github.com/ShresthChandel",
   }
+  
 ];
