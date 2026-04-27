@@ -13,7 +13,7 @@ export const experiences: Experience[] = [
     id: "varnet",
     company: "Varnet Solutions Pvt. Ltd.",
     role: "AI/ML Intern",
-    duration: "Jun 2024 – Aug 2024",
+    duration: "June 2025 – July 2025",
     location: "Indore · Internship",
     description: [
       "Engineered an Enterprise RAG Chatbot capable of handling complex domain-specific queries with high accuracy.",
@@ -26,7 +26,7 @@ export const experiences: Experience[] = [
     id: "catalysist",
     company: "Catalysis'T (IIT Guwahati)",
     role: "Consultant",
-    duration: "Jan 2024 – Apr 2024",
+    duration: "July 2025 – August 2025",
     location: "Remote · Consulting",
     description: [
       "Conducted comprehensive B2B market research to identify product-market fit for early-stage tech startups.",
