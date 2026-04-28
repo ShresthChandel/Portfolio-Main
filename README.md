@@ -2,7 +2,7 @@
 
 A professional, modern, and interactive personal portfolio website built with **Next.js**, **Tailwind CSS**, and **Framer Motion+*. It showcases my experience, projects, skills, and daily activity tracking (GitHub contributions & daily habits).
 
-## �� Features
+## Features
 
 - **Modern UI/UX**: Sleek, dark-themed design with custom cursors and glow effects.
 - **Smooth Animations**: Page transitions and scroll animations powered by Framer Motion.
@@ -10,10 +10,11 @@ A professional, modern, and interactive personal portfolio website built with **
 - **Live Activity Tracking**: 
   - **GitHub Stats**: Real-time GitHub contribution graph and streak stats.
   - **Grind Tracker**: Integrates with a custom external Habit-Tracker API to display a daily heatmap, current streaks, and a pop-out modal of detailed habits.
+- **Analytics Integration**: Page views and visitor activity tracking automatically captured via Vercel Analytics.
 - **Contact Form**: Functional email integration using Resend.
 - **Responsive Design**: Fully responsive across mobile, tablet, and desktop devices.
 
-## 🫠 Tech Stack
+## Tech Stack
 
 - **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
@@ -25,14 +26,15 @@ A professional, modern, and interactive personal portfolio website built with **
   - `react-activity-calendar`
   - `react-github-calendar`
 - **Email API**: [Resend](https://resend.com/)
+- **Web Analytics**: [@vercel/analytics](https://vercel.com/analytics)
 
-## ⚙️ Environment Variables
+## Environment Variables
 
 To run this project locally, you will need to add the following environment variables to your `.env.local` file:
 
 ```env
 # Resend Email API for contact form
-RESEND_API_KEY=https://resend.com/
+RESEND_API_KEY=your_resend_api_key
 
 # Habit Tracker API configuration (For the Activity Section)
 PORTFOLIO_API_KEY=your_habit_tracker_api_key
@@ -40,9 +42,9 @@ PORTFOLIO_API_KEY=your_habit_tracker_api_key
 # Supabase (If interacting directly with database)
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
 SUPABASE_SERVICE_ROLE_KEY=your_supabase_anon_key
-````
+```
 
-## 💻 Getting Started
+## Getting Started
 
 1. **Clone the repository:**
    ```bash
@@ -62,7 +64,7 @@ SUPABASE_SERVICE_ROLE_KEY=your_supabase_anon_key
 
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 📄 Folder Structure
+## Folder Structure
 
 ```text
 src/
@@ -76,6 +78,6 @@ src/
 ├’– data/                 # Static data files for projects, skills, and experience
 ```
 
-## 📝️ License
+## License
 
 Designed and developed by Shresth Singh Chandel.
